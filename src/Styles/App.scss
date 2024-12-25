@@ -1,0 +1,57 @@
+@import "./Variables.scss";
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: "Inter" !important;
+  font-style: normal;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+input,
+button,
+select,
+textarea {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.btn-disabled {
+  background-color: $grey-text-color;
+  cursor: not-allowed;
+  color: $button-disable;
+  border: 1px solid $grey-text-color;
+  border-radius: 50px;
+}
+
+.submit-btn {
+  border-radius: 50px;
+  border: 1px solid $primary-color;
+  background: $primary-color;
+  color: $color-white;
+  cursor: pointer;
+}
+
+.primary {
+  color: $primary-color;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px $button-disable;
+  border-radius: 10px;
+  height: 70vh;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $primary-color;
+  border-radius: 10px;
+}

@@ -1,0 +1,100 @@
+@import "./Variables.scss";
+
+.login {
+  background-color: $background-grey-color;
+  height: 100vh !important;
+
+  .login-icon {
+    position: relative;
+  }
+
+  .mail-eye-icons {
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+    top: 25%;
+    right: 10px;
+    cursor: pointer;
+    z-index: 1;
+    color: $primary-color;
+  }
+
+  .form-control::placeholder {
+    font-size: 14px;
+  }
+
+  .EmailLogin {
+
+    padding: 2.5rem 1.5rem;
+    border: 5px solid $border-login;
+    border-radius: 20px;
+    box-shadow: 0 0px 10px 0px $shadow-lightgrey inset;
+  }
+
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .shopping {
+      font-size: 80px;
+      color: $primary-color;
+      font-weight: 700;
+      font-style: italic;
+    }
+  }
+
+  .text-danger {
+    font-size: 12px !important;
+  }
+
+  .fontItalic {
+    font-family: 'Brush Script MT', cursive;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .content {
+    .shopping {
+      font-size: 40px !important;
+      text-align: center;
+    }
+  }
+
+  .EmailLogin {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 1.5rem !important;
+  }
+
+  .fontItalic {
+    font-size: 12px;
+  }
+
+  .col-md-4.content {
+    display: block !important;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1100px) {
+  .content {
+    .shopping {
+      font-size: 50px !important;
+      text-align: center;
+    }
+  }
+
+  .EmailLogin {
+
+    padding: 1.5rem !important;
+  }
+
+  .col-md-8,
+  .col-md-4 {
+    width: 50% !important;
+  }
+
+  .fontItalic {
+    font-size: 12px;
+  }
+}

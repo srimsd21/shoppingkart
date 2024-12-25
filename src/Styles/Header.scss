@@ -1,0 +1,11 @@
+@import './Variables.scss';
+
+.selected {
+    color: $primary-color;
+
+}
+
+.header-hover:hover {
+    background-color: $color-white !important;
+    border-radius: 50px !important;
+}
